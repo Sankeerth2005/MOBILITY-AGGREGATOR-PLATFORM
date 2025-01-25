@@ -1,0 +1,229 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #4CAF50, #66bb6a);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+/* Location Dropdown Section */
+.location {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+select {
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: #f0f0f0;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+select:hover {
+    border-color: #66bb6a;
+    transition: 0.3s ease;
+}
+
+#city-msg {
+    font-size: 1.1em;
+    color: #4CAF50;
+}
+
+/* Apps List Section */
+#mobility-apps {
+    margin: 20px;
+}
+
+#mobility-apps h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#apps-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#apps-list div {
+    background-color: #fff;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#apps-list div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#apps-list img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+#apps-list img:hover {
+    transform: rotate(15deg);
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4CAF50;
+}
+
+/* Antique Mobility Museum */
+.museum {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.museum h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.museum p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* CTA Section */
+.cta {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
+
+.cta h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+input[type="email"] {
+    padding: 12px;
+    width: 300px;
+    font-size: 1em;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+
+input[type="email"]:focus {
+    border-color: #66bb6a;
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: #ffffff;
+    color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #66bb6a;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .location {
+        width: 95%;
+    }
+
+    #apps-list div {
+        width: 45%;
+    }
+
+    .cta {
+        padding: 20px;
+    }
+
+    input[type="email"] {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    #apps-list div {
+        width: 100%;
+    }
+
+    .cta {
+        padding: 15px;
+    }
+
+    input[type="email"] {
+        width: 70%;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
